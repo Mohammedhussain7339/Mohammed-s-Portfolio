@@ -5,6 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa6";
 import ParticlesJS from "./Particles"
+import heroImage from "../../img/hussainImg.png"
 
 function Home() {
   return (
@@ -41,7 +42,7 @@ function Home() {
             <div className="cv"><a href="public/data/self aadhar_1.pdf" download='self aadhar'>Download C.V.</a></div>
       </div>
       <div className="photoarea" data-aos="fade-left" data-aos-duration="1500">
-        <img src="img/hussain img.png" alt="" />
+        <img src={heroImage} alt="" />
       </div>
 
     </div>
