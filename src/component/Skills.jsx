@@ -23,7 +23,9 @@ function Skills() {
       <h1 className='h1'>Technical Skills</h1>
       <div className="skillContainer" id="skills">
         
-        <div className="skillbox" data-aos="zoom-in-up" data-aos-duration="1500">
+        <div className="skillbox setskill"
+        style={{height:'400px'}}
+        data-aos="zoom-in-up" data-aos-duration="1500">
           {processedSkills.map((category, index) => (
             <div key={index} onClick={() => handleCategoryClick(index)} className="skillboxes">
               {React.createElement(ICONS[category.icon], { className: 'skillicons' })}
@@ -37,7 +39,7 @@ function Skills() {
         {/* Loop to display skills of the selected category */}
         {processedSkills.map((category, index) => (
           selectedCategory === index && (
-            <div key={index} className="skillbox1" data-aos="zoom-in" data-aos-duration="1500">
+            <div key={index} className="skillbox1" data-aos="flip-left" data-aos-duration="1500">
               <h2 style={{ margin: 'px' }}>{category.title}</h2>
               {React.createElement(ICONS[category.icon], { className: 'skillicons' })}
               <hr style={{ border: '#4237a8 1px solid' }} />

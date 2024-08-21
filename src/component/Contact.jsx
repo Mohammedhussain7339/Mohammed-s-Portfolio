@@ -1,6 +1,15 @@
 import React from 'react'
+import { useEffect } from 'react';
+import Aos from 'aos';
 
 function Contact() {
+  useEffect(() => {
+    Aos.init({
+      duration: 1500,
+      once: false,
+    });
+  }, []);
+  
   return (
     <>      <h1 className='h1'>Contact <b>Me</b></h1>
 

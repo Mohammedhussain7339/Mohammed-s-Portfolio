@@ -10,13 +10,13 @@ function Projects() {
       <div className="projectbox" data-aos="flip-right"><div className="h-project">
         <h2>Web Design</h2>
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptates.</h4>
-        <a href="https://github.com"><FaSquareGithub /></a>
+        <a style={{fontSize:'35px'}}href="https://github.com"><FaSquareGithub /></a>
       </div>
       </div>
       <div className="projectbox"><div className="h-project">
         <h2>Web Design</h2>
         <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, voluptates.</h4>
-        <a href="https://github.com"><FaSquareGithub />
+        <a href="https://github.com/Mohammedhussain7339/Mohammed-s-Portfolio"><FaSquareGithub />
         </a>
       </div>
       </div>

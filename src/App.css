@@ -6,6 +6,11 @@
   font-family: "Playwrite NO", cursive;
   
 }
+html {
+  scroll-behavior: smooth;
+}
+
+
 body{
   background-image: linear-gradient(to right ,#6657c5	,#151026	,#522e7b	);
   background-color: #162037;
@@ -13,29 +18,28 @@ body{
   position: relative;
 }
 .h1{
-  margin-left: 110px;
-  padding: 0;
+  margin-left: 100px;
 }
-.h1::after{
-position: relative;
-content: '------';
-
-background-image: linear-gradient(to right, #ff00cc, #33abcc);
--webkit-background-clip: text;
-background-clip: text;
-color: transparent;
-
-width: 100px;
-height: 1px;
-border-radius: 3px;
-/* background-image: linear-gradient(red,blue); */
-left: -160px;
-top: 20px;
+.menulist{
+  position: relative;
 }
-
+.menulist::after{
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: rgb(117, 58, 226);
+  left: 0;
+  top: 23px;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+.menulist:hover::after{
+  width: 100%;
+}
 .navbar{
   position: sticky;
-  top: 1px;
+  top: 0px;
   z-index: 4;
   width: 100%;
   height: 75px;
@@ -80,12 +84,13 @@ top: 20px;
 }
 .mobilenav{
   position: absolute;
+  z-index: 12;
   top: 0;
   left: -300px; /* Initially hide the navbar off the screen */
   padding-left: 30px;
   width: 300px;
   height: 100vh;
-  background-color: #e2e0e7;
+  background-color: #7966f0;
    transition: transform 0.3s ease-in-out;
   transform: translateX(0);
   
@@ -98,7 +103,6 @@ top: 20px;
   margin-top: 10px;
 width: 100%;
 height: 50px;
-background-color: rgb(171, 122, 122);
 }
 .btnhireme{
   width: 170px;
@@ -157,12 +161,27 @@ background-color: rgb(171, 122, 122);
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  animation:photo 3s linear 1s infinite;
 
+}
+@keyframes photo {
+  0%{
+    filter: drop-shadow(0 0px 10px rgb(137, 106, 250));
+
+  }
+  100%{
+    filter: drop-shadow(  0 0px 10px rgb(132, 69, 235));
+
+  }
+  
+}
 .photoarea img {
+  background-image: url('img/hussain.png');
   width: 300px;
   height: 300px;
-  border-radius: 50%;
+  border-radius: 50% 70% 70% 30% / 50% 52% 49% 50%   ;
+
+
 }
 
 @media (max-width: 768px) {
@@ -216,6 +235,9 @@ background-color: rgb(171, 122, 122);
   flex-wrap: wrap;
 }
 
+.setskill{
+  height: 400px;
+}
 .skillbox, .skillbox1 {
   width: 45%;
   height: 60%;
@@ -343,25 +365,40 @@ background-color: rgb(171, 122, 122);
 
 .projectbox {
   width: 300px;
-  height: 250px;
-  border-radius: 6px;
-  background-color: blue;
+  height: 230px;
+  border-radius: 16px;
   cursor: pointer;
+  background-image: url('img/pr1.png');
+  background-size: cover;
+  background-position: center;
   overflow: hidden;
   transition: linear 1s;
+  overflow: hidden;
+}
+.projectbox h4{
+  color:#492A6F;
+}
+.projectbox a{
+  filter: drop-shadow(0 10px 10px rgb(149, 207, 239));
+
+}
+.projectbox h2{
+  color:#483D8B;
 }
 
 .h-project {
   width: 300px;
   height: 250px;
-  background-color: #1267a4;
-  opacity: 0;
+  transform: translate(0,260px);
   text-align: center;
+  transition: 0.6s linear;
+  box-shadow: inset  0px -100px 100px 0px rgb(79, 25, 205);   
 }
 
 .projectbox:hover .h-project {
-  opacity: 1;
+transform: translate(0,93px);
 }
+
 
 /* Responsive styles */
 @media (max-width: 1200px) {
@@ -551,29 +588,18 @@ input {
   height: 300px;
   margin: 10px;
   cursor: pointer;
-}
-.profileimg:hover{
-  border: 3px solid #9380da;
   border-radius: 10px;
-
+  overflow: hidden;
 }
-.profileimg:hover:after{
-  content: '';
-  position: absolute;
-  width: 100%;
-  height: 300px;
-  background-color: rgba(76, 76, 192, 0.2);
-  left: 0;
-  top: 0;
-  border-radius: 10px;
+.profileimg .img2:hover{
+  transform: scale(1.2); /* Scale the element to 120% on hover */
 
 }
 
-.profileimg img {
+.img2 {
   width: 100%;
   height: 100%;
-  border-radius: 10px;
-  border: #392f79 2px solid;
+  transition: 1s;
 }
 
 

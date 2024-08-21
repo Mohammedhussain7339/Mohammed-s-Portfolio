@@ -7,7 +7,8 @@ function About() {
     <h1 className='h1' id='about'>About me</h1>
     <div className='aboutContainer'>
       <div className="profileimg" data-aos="zoom-in-up" data-aos-duration="1500">
-      <img src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+        {/* <img  className='img2'src="img/hussain img.png" alt="" /> */}
+      <img className='img2' src="https://images.unsplash.com/photo-1568602471122-7832951cc4c5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
 
       </div>
       <div className="profileme" data-aos="zoom-in-up" data-aos-duration="1500">
