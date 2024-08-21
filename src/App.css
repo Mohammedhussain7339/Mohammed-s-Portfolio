@@ -89,7 +89,7 @@ body{
   left: -300px; /* Initially hide the navbar off the screen */
   padding-left: 30px;
   width: 300px;
-  height: 620vh;
+  height: 630vh;
   background-color: #5c4dc1;
    transition: transform 0.3s ease-in-out;
   transform: translateX(0);

@@ -39,10 +39,10 @@ function Home() {
                 </ul>
             </div>
             <br /><br /><br /><br />
-            <div className="cv"><a href="public/data/self aadhar_1.pdf" download='self aadhar'>Download C.V.</a></div>
+            <div className="cv"><a href="public/data/resume" download='self aadhar'>Download C.V.</a></div>
       </div>
       <div className="photoarea" data-aos="fade-left" data-aos-duration="1500">
-        <img src={heroImage} alt="" />
+        <img src={heroImage} loading='lazy' alt="" />
       </div>
 
     </div>
