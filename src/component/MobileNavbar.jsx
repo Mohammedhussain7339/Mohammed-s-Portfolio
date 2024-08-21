@@ -3,7 +3,7 @@ import React from 'react'
 function MobileNavbar({isOpen}) {
   return (
     <div className={`mobilenav ${isOpen ? 'open' : ''}`}>
-            <div className="mobilelogo"><h3 style={{color:'black'}}>Mohammed's Portfolio </h3></div>
+            <div className="mobilelogo"><h3 >Mohammed's Portfolio </h3></div>
             <div className="m-menubar">
             <ul className='mobileul'>
                     <li >
